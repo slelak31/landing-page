@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "Home-Page">
+
+        <div class = "Hero-Section">
+
+            <nav>
+                <ul class = "navbar">
+                    <li class = "logo">
+                        <a href="/">Selmir & Amna</a>
+                    </li>
+                    <li>
+                        <a href="#">Where We've Been</a>
+                    </li>
+                    <li>
+                        <a href="#">Bucket List Destinations</a>
+                    </li>
+                    <li>
+                        <a href="#">Our Story</a>
+                    </li>
+                </ul>l
+            </nav>
+
+            <div class = "heroMain">
+                <div class = "heroMain-Text">
+                    <h1>Our Adventures</h1>
+                    <p>
+                        We have just started our travel journey, so we have many more
+                         places to check off our bucket list. We are making some 
+                         great progress and will keep updated everyone that 
+                         wishes to follow along!
+                    </p>
+                    <button>Follow The Adventures</button>
+                </div>
+
+                <div class = "heroMain-Image">
+                    <img src="pexels-aaditya-arora-188236-592753.jpg" alt="image">
+                </div>
+            </div>
+
+        </div>
+
+        <div class = "Top-Middle">
+            <div class = "Information-Header">
+                <p>
+                    Adventures Taken
+                </p>
+
+            </div>
+            
+            <div class = "journey-previews">
+                
+                <div class = "Journey-Preview-Box">
+                    <div class = "left-J1Label">
+                        <p>
+                            Italy
+                        </p>
+                    </div>
+                    <div class = "right-J1Content">
+                        <img src="Italy.PNG" alt="image">
+                        <p>
+                            We went to Italy for our honeymoon. We visited Venice, & Rome. The tiramasu was delicious!
+                        </p>
+                    </div>
+                </div>
+
+                <div class = "Journey-Preview-Box">
+                    <div class = "left-J2Label">
+                        <p>
+                            California
+                        </p>
+                    </div>
+                    <div class = right-J2Content>
+                        <img src="Cali.PNG" alt="image">
+                        <p>
+                            Specifically, Los Angeles. We visited all of the movie sets that we could! The hollywood movie sets tour at universal was awesome!
+                        </p>
+                    </div>
+                </div>
+
+                <div class = "Journey-Preview-Box">
+                    <div class = "left-J3Label">
+                        <p>
+                            Florida
+                        </p>
+                    </div>
+                    <div class = "right-J3Content">
+                        <img src="Florida.PNG" alt="image">
+                        <p>
+                            We went in May of 2024. We mostly spent our time at universal, but also went to Clearwater Beach.
+                        </p>
+                    </div>
+                </div>
+
+                <div class = "Journey-Preview-Box">
+                    <div class = "left-J4Label">
+                        <p>
+                            Japan
+                        </p>
+                    </div>
+                    <div class = "right-J4Content">
+                    <img src="Japan.png" alt="image">
+                    <p>
+                        We went to Japan with 3 other friends. We stayed in Tokyo and also Kyoto, but visited Osaka and Nara as well! My fav trip!
+                    </p>
+                    </div>
+                </div>
+
+            </div>
+
+        
+        </div>
+
+        <div class = "Bottom-Middle">
+            <div class = "Quote-Container">
+                <p class = "Quote-Text">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space,
+                    or maybe people will actually read it. Who knows? All I know is that it looks nice</p>
+                <p class ="Quote-Author">-Thor, God of Thunder</p>
+            </div>
+        </div>
+
+        <div class = "Bottom">
+            <div class = Action-Call-Container> 
+                <div class = "Call-To-Action-Text">
+                    <p class = "Call-To-Action-Heading">Call to action! It's time!</p>
+                    <p class = "Call-To-Action-Subheading">Sign up for our adventures by clicking that button right over there!</p>
+                </div>
+                <div class = "Call-To-Action-Button">
+                    <button class ="Sign-Up-Button">Sign up</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class = "Footer">
+            <div class = "Footer-Text">
+            <p>Copyright © Selmir Lelak 2025 </p>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        (function() {
+        const images = document.querySelectorAll('.Journey-Preview-Box img');
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            } else {
+            entry.target.classList.remove('visible');
+            }
+        });
+        }, {
+        threshold: 0.7
+        });
+        images.forEach(img => observer.observe(img));
+        })();
+    </script>
+</body>
+</html>
